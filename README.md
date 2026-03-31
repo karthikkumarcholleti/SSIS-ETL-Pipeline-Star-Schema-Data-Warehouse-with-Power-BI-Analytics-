@@ -33,7 +33,7 @@ The system follows a structured ETL workflow:
 ## 📂 Project Structure
 
 ```
-SSIS-BASED-ETL-AND-DATA-WAREHOUSE/
+SSIS-ETL-Data-Warehouse-PowerBI-Analytics/
 │
 ├── ETL Pipeline/                # Contains SSIS solution and packages
 │   ├── ETL Pipeline.sln
@@ -42,12 +42,14 @@ SSIS-BASED-ETL-AND-DATA-WAREHOUSE/
 ├── images/
 │   ├── Dashboard.png            # Power BI dashboard screenshot
 │   |── pipeline.png             # SSIS pipeline design screenshot
-|   |__ Power Automate Flow.png  # Power Automate flow
+|   |__ Power_Automate_Flow.png  # Power Automate flow
 │
 ├── DataImportSchema.sql         # SQL script to create schemas & dimension tables
 ├── FactSales.sql                # SQL script to create FactSales table
 ├── ERP Analytics.pbix           # Power BI report file
 ├── Sample - Superstore.csv      # Sample dataset
+├── us_contacts.csv
+
 ```
 
 ---
@@ -111,9 +113,10 @@ Dynamic **Row-Level Security (RLS)** was implemented using DAX to restrict data 
 
 ## Reporting Automation
 
-A flow was created to automatically send emails to managers implying to Row level security principles established.
+A flow was created to automatically send emails to managers aligned with the Row‑Level Security (RLS) principles established.
 
 ![Power Automate Flow](images/Power_Automate_Flow.png)
+
 
 ## 🔐 Security & Governance
 
